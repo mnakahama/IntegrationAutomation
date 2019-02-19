@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//td[@title = 'Automation001' and (text() = 'Automation001' or . = 'Automation001')]</value>
+         <value>//td[@title = 'AUTOMATION001' and @aria-describedby = 'searchMessagesGrid_PID.18.1']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -35,17 +35,17 @@
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Automation001</value>
+      <value>AUTOMATION001</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-describedby</name>
       <type>Main</type>
       <value>searchMessagesGrid_PID.18.1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
