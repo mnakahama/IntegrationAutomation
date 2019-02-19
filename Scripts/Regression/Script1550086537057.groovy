@@ -15,10 +15,8 @@ dbpwd = findTestData("IntegrationsInputData").getValue("dbPwd", 1)
 dbqtblmain = findTestData("IntegrationsInputData").getValue("dbQueryTBLMain", 1)
 dbqfullp = findTestData("IntegrationsInputData").getValue("dbQueryFullPatient", 1)
 
-//queryTableMain = findTestData("IntegrationsInputData").getValue("dbTableMain", 1)
-//queryFullPatient = findTestData("IntegrationsInputData").getValue("dbFullPatient", 1)
-cleanTableMain = findTestData("IntegrationsInputData").getValue("cleanTableMain", 1)
-cleanFullPatient = findTestData("IntegrationsInputData").getValue("cleanFullPatient", 1)
+dbclntblmain = findTestData("IntegrationsInputData").getValue("dbCleanTableMain", 1)
+dbclnfullp = findTestData("IntegrationsInputData").getValue("dbCleanFullPatient", 1)
 
 WebUI.openBrowser('')
 
@@ -105,6 +103,7 @@ for(item in tempRecords){
 	println(item)
 }
 
+CustomKeywords.'com.integrationsDB.sqlConnection.closeDatabaseConnection'()
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Integrations Dashboard/a_Logout (1)'))
