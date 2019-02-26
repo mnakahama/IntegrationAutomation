@@ -24,10 +24,6 @@ WebUI.navigateToUrl(url)
 WebUI.setText(findTestObject('Page_Integrations Dashboard/input_User name_UserName (1)'), usr)
 WebUI.setEncryptedText(findTestObject('Page_Integrations Dashboard/input_Password_Password (1)'), pwd)
 
-//WebUI.navigateToUrl('http://webtst1.imbills.com/IntegrationsDashboard/Account/Login?ReturnUrl=%2fIntegrationsDashboard%2f')
-//WebUI.setText(findTestObject('Page_Integrations Dashboard/input_User name_UserName (1)'), 'IM\\maki.nakahama')
-//WebUI.setEncryptedText(findTestObject('Page_Integrations Dashboard/input_Password_Password (1)'), '98DKvOJKd1c9s3XUDjJJbQ==')
-
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Page_Integrations Dashboard/input (1)'))
@@ -52,7 +48,6 @@ WebUI.verifyElementPresent(findTestObject('Page_Integrations Dashboard/span_Send
 WebUI.click(findTestObject('Page_Integrations Dashboard/span_Send Message'))
 
 WebUI.setText(findTestObject('Page_Integrations Dashboard/textarea_(collapse all)_messag'), msg)
-//WebUI.setText(findTestObject('Page_Integrations Dashboard/textarea_(collapse all)_messag'), 'MSH|^~&|CSAF|B|CSAF|B|20060517075248||ADT^A08|12345|P|2.3|||||||\nEVN|A04|20060517075245||||20060517075245\nPID||0001149304|06368761||TESTING^DONE^M^^^^^||19450714|M||1|123 TEST DR^APT 1^ATLANTA^GA^30028^||7704443333~7704442222|7701234567|E|M|^|Automation001|123456789|||||||||AMERICAN||\nACC|200905131100|4||SCARY||||PIECE OF METAL HIT HEAD\nPV1||S|HTT^R1^B2^F4||||0878^FUNG^WAYNE^E^JR^MR^DR^.PACIFIC OPTHAL CONS|0878^FUNG^WAYNE^E^JR^MR^DR^|0878^FUNG^WAYNE^E^JR^MR^DR^|CSAF|||||||0878^FUNG^WAYNE^E^JR^MR^DR^|INPATIENT||S||||||||||||||||D-DISPO|D-LOC||CSAF|||||20120717133000||\nPV2|||||||||200907131100|9|10|\nZ11||BY VISITS|19980126||ST MARY COLLEGE||||1|\nZOR|HEALTHET|800|9777282|\nZMC|||19980126\nZP1|INGENIOUS MED|5660 NEW NORTHSIDE DR|UNIT 1|ATLANTA|GA|30326|TECH SUPPORT|\nGT1|1|01354352|REAMER^MICHAEL^OWEN^""^||15370 SE KENSINGTON DR^UNIT A^CLACKAMAS^OR^97015|(503)997-2474~(503)997-2475|(503)255-5999|19740515|M||4|542-94-3941||||NUPRECON|500 WORK DR^UNIT B^CLACKAMAS^OR^97015|(503)255-6000|||||||||||||||||||||||||||||||TECH SUPPORT|\nGT1|2|01354352|REAMER^TEST^GRN^""^||15370 SE KENSINGTON DR^UNIT A^CLACKAMAS^OR^97015|(503)997-2474~(503)997-2475|(503)255-5999|19740515|M||4|542-94-1111||||NUPRECON|500 WORK DR^UNIT B^CLACKAMAS^OR^97015|(503)255-6000|||||||||||||||||||||||||||||||TECH SUPPORT|\nPD1||||00252^FUNG^WAYNE^E^^|\nZTP||||||\nIN1|1|0369|2229|HEALTH CARE SAVINGS|4530 PARK RD  SUITE 110^BLD 1^CHARLOTTE^NC^28209^USA^MAIN||(800)892-1893|5276|InsuranceGroup|||||A123456|IC123|STAINBACK^NICHOLAS^W|01^Patient is Insured|19820413|157 THORPE STREET^BUILDING B^HENDERSON^NC^27536^USA^^^091|||1||||||PA123||||||||241537100||||||1^Employed full time|M|566 RUIN CREEK RD^ABC^HENDERSON^NC^27536^USA^^^091\nIN2||123456789|INGENIOUS MED||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||(770)765-4321|(404)765-3333\nFT1|1|||20091002|||||||||||||||253.6^SIADH central~253.7^TEST central||||||99238^D/C: Inpt D/C-low (<30min)||\nNK1|1|TEST^JOSEPH2^M^^^^^|F|123 TEST DR^APT 1^ATLANTA^GA^30028^|(503)255-1234|(503)255-1000||\nNK1|2|TEST^JOSEPH1^M^^^^^|F|123 TEST DR^APT 1^ATLANTA^GA^30028^|(503)255-1234|(503)255-1000||\nZED|||||4159233007|80878|37|4159233007|WEF||||\n')
 
 WebUI.click(findTestObject('Page_Integrations Dashboard/input_(select message text)_pa'))
 
@@ -84,9 +79,9 @@ WebUI.click(findTestObject('Page_Integrations Dashboard/div_Automation001'))
 
 WebUI.click(findTestObject('Page_Integrations Dashboard/input_1 (1)'))
 
-WebUI.delay(5)
+WebUI.delay(240)
 CustomKeywords.'com.integrationsDB.sqlConnection.connectDB'(dbip, dbport, dbgrp, dbusr, dbpwd)
-WebUI.delay(3)
+WebUI.delay(2)
 def records
 List<String> tempRecords = new ArrayList<String>()
 records = CustomKeywords.'com.integrationsDB.sqlConnection.executeQuery'(dbqtblmain)
@@ -102,6 +97,11 @@ while(records.next()){
 for(item in tempRecords){
 	println(item)
 }
+
+WebUI.delay(3)
+CustomKeywords.'com.integrationsDB.sqlConnection.execute'(dbclnfullp)
+CustomKeywords.'com.integrationsDB.sqlConnection.execute'(dbclntblmain)
+WebUI.delay(3)
 
 CustomKeywords.'com.integrationsDB.sqlConnection.closeDatabaseConnection'()
 WebUI.delay(3)

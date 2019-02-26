@@ -47,6 +47,13 @@ public class sqlConnection {
 	}
 
 	@Keyword
+	def execute(String queryString){
+		Statement stm = connection.createStatement()
+		boolean rs = stm.execute(queryString)
+		return rs
+	}
+
+	@Keyword
 	def closeDatabaseConnection() {
 		if(connection != null && !connection.isClosed()){
 			connection.close()

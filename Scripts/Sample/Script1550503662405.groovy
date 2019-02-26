@@ -12,14 +12,25 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
-import com.kms.katalon.core.configuration.RunConfiguration
-/**
- * Execute a batch file situated in the KS project directory.
- * @param batchFile (String) e.g. "myfile.bat"
- */
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://qa.imbills.com/IntegrationsDashboard/Account/Login?ReturnUrl=%2fIntegrationsDashboard')
+
+WebUI.setText(findTestObject('Page_Integrations Dashboard/input_User name_UserName (2)'), 'IM\\maki.nakahama')
+
+WebUI.setEncryptedText(findTestObject('Page_Integrations Dashboard/input_Password_Password (2)'), 'xWOFDJD/8f+y1p7HCeDraA==')
+
+WebUI.click(findTestObject('Page_Integrations Dashboard/input (2)'))
+
+WebUI.closeBrowser()
+
 static void runBatchFile(String batchFile) {
-  String bf = RunConfiguration.getProjectDir() + '/' + batchFile
-  comment("Running batch file: " + bf)
-  Runtime.runtime.exec(bf)
+    String bf = (RunConfiguration.getProjectDir() + '/') + batchFile
+
+    comment('Running batch file: ' + bf)
+
+    Runtime.runtime.exec(bf)
 }
+
