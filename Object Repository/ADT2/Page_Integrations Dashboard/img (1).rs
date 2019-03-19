@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>img</name>
+   <name>img (1)</name>
    <tag></tag>
-   <elementGuidId>efb29afc-3729-40e6-97dc-5b55ae9b3e55</elementGuidId>
+   <elementGuidId>b0b916ca-cd57-424b-a1e6-96ee47aabde9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='customSearch_BillingFiles']/table/tbody/tr[2]/td[2]/div/table/tbody/tr[3]/td[8]/a/img</value>
+         <value>//div[@id='tabIncomingFeeds']/div/div/div/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -81,41 +81,5 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <value>//div/img</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <value>//div[@id='customSearch_BillingFiles']/table/tbody/tr[2]/td[2]/div/table/tbody/tr[3]/td[8]/a/img</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='and'])[4]/following::img[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='{empty}'])[2]/following::img[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(New)'])[1]/preceding::img[3]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Save As)'])[1]/preceding::img[3]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <value>//tr[3]/td[8]/a/img</value>
    </webElementXpaths>
 </WebElementEntity>

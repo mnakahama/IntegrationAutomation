@@ -1,121 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>img</name>
+   <name>input_User name_UserName (1) (2)</name>
    <tag></tag>
-   <elementGuidId>efb29afc-3729-40e6-97dc-5b55ae9b3e55</elementGuidId>
+   <elementGuidId>d04ffe2c-0006-4f56-b410-b756cee483d2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='customSearch_BillingFiles']/table/tbody/tr[2]/td[2]/div/table/tbody/tr[3]/td[8]/a/img</value>
+         <value>//input[@id='UserName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>img</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>src</name>
+      <name>data-val</name>
       <type>Main</type>
-      <value>/IntegrationsDashboard/images/menu20x20.png</value>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>alt</name>
+      <name>data-val-regex</name>
       <type>Main</type>
-      <value>menu</value>
+      <value>User names may only contain alphanumeric characters, spaces, colons, periods, dashes, underscores, and backslashes.</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-regex-pattern</name>
+      <type>Main</type>
+      <value>[A-Za-z0-9:.\-_ \\]+</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-required</name>
+      <type>Main</type>
+      <value>The User name field is required.</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>UserName</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>UserName</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tabIncomingFeeds&quot;)/div[1]/div[@class=&quot;panelAboveInterfaceGrid&quot;]/div[@class=&quot;multiselectMenu&quot;]/img[1]</value>
+      <value>id(&quot;UserName&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <value>//div[@id='tabIncomingFeeds']/div/div/div/img</value>
-   </webElementXpaths>
-   <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='To'])[1]/following::img[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='From'])[1]/following::img[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prod'])[1]/preceding::img[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Test'])[1]/preceding::img[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:img</name>
-      <value>//img[@alt='menu']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <value>//div/img</value>
+      <name>xpath:attributes</name>
+      <value>//input[@id='UserName']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='customSearch_BillingFiles']/table/tbody/tr[2]/td[2]/div/table/tbody/tr[3]/td[8]/a/img</value>
+      <value>//form[@id='loginForm']/fieldset/ul/li[2]/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='and'])[4]/following::img[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='User name'])[1]/following::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='{empty}'])[2]/following::img[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Group name'])[1]/following::input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(New)'])[1]/preceding::img[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='(Save As)'])[1]/preceding::img[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Remember my group/user name'])[1]/preceding::input[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//tr[3]/td[8]/a/img</value>
+      <value>//li[2]/input</value>
    </webElementXpaths>
 </WebElementEntity>
